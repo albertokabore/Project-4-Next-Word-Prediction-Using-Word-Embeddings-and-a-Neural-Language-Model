@@ -221,3 +221,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project data and trained artifacts (re-created by python -m nwp.pipeline)
+data/
+artifacts/*
+!artifacts/metrics.json
+!artifacts/training_curves.png
+!artifacts/verification.json

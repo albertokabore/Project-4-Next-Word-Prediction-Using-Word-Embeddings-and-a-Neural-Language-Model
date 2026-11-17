@@ -1,0 +1,9 @@
+[project]
+name = "nwp"
+version = "1.0.0"
+description = "Next-word prediction with Word2Vec embeddings and an LSTM language model"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

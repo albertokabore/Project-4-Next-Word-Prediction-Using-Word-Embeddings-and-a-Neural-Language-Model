@@ -1,0 +1,235 @@
+{
+  "all_checks_passed": true,
+  "checks": {
+    "dataset_configuration": true,
+    "dataset_counts": true,
+    "vocabulary": true,
+    "sequence_counts": true,
+    "test_metrics": true,
+    "baseline": true,
+    "history_lengths": true,
+    "best_epoch": true,
+    "best_checkpoint_validation": true,
+    "word2vec_training_counts": true,
+    "word2vec_coverage": true,
+    "word2vec_neighbours": true,
+    "demo_predictions": true
+  },
+  "scope": "Re-evaluates local artifacts; no download authentication or full training rerun.",
+  "sha256": {
+    "data\\raw\\1661-0.txt": "82a6a80b83dca70111d4afb7f19c9ac12d69c8875f9d32a4b56ba3082625ca7f",
+    "artifacts\\config.json": "9f8014a7ab1b30cd54032f4445e3edd92ccc846adb7a451fad8d9c1720530b5b",
+    "artifacts\\vocab.json": "93c50453b99d15f405a609d2942493f0decb7b9e02b2876d2743bbe4793c6f32",
+    "artifacts\\metrics.json": "f5edf6f53973265ec7f0ba68799d0a4e202a12b054e07a7ad8501dfba6a4e78d",
+    "artifacts\\model.pt": "e3d871a99526d1c547ee91657ee861a3b564a4743cb79288a49aa234546ce57b",
+    "artifacts\\word2vec.model": "b6daa3d07137916499ce5fff898341173d6a792cd7b5c0b623138a06659a4845"
+  },
+  "verification_environment": {
+    "python": "3.11.0",
+    "torch": "2.14.0+cpu",
+    "gensim": "4.4.0",
+    "numpy": "2.3.2",
+    "kagglehub": "1.0.3",
+    "pytest": "9.1.1"
+  },
+  "raw_file": {
+    "bytes": 607791,
+    "characters": 581887,
+    "whitespace_words": 107602,
+    "lines": 12310
+  },
+  "coverage": {
+    "train": {
+      "sentences": 5591,
+      "tokens": 83147,
+      "scored_targets": 79763,
+      "excluded_unknown_targets": 3384,
+      "target_coverage": 0.9593009970293577
+    },
+    "val": {
+      "sentences": 698,
+      "tokens": 11451,
+      "scored_targets": 10656,
+      "excluded_unknown_targets": 795,
+      "target_coverage": 0.9305737490175531
+    },
+    "test": {
+      "sentences": 700,
+      "tokens": 10830,
+      "scored_targets": 9935,
+      "excluded_unknown_targets": 895,
+      "target_coverage": 0.91735918744229
+    }
+  },
+  "vocab_size": 3898,
+  "model_parameters": 2284514,
+  "recomputed_validation": {
+    "loss": 4.900866969569667,
+    "perplexity": 134.40625532055984,
+    "top1_acc": 0.14930555555555555,
+    "top5_acc": 0.34572072072072074
+  },
+  "recomputed_test": {
+    "loss": 4.925609196594269,
+    "perplexity": 137.7732470757117,
+    "top1_acc": 0.15188726723704077,
+    "top5_acc": 0.33940613990941115
+  },
+  "recomputed_baseline": {
+    "top1_acc": 0.052742828384499243,
+    "top5_acc": 0.16839456467035732
+  },
+  "all_test_word_accuracy_counting_unknowns_as_incorrect": {
+    "top1_acc": 0.13933518005540166,
+    "top5_acc": 0.3113573407202216
+  },
+  "recomputed_demo_predictions": {
+    "my dear watson": [
+      [
+        "i",
+        0.1228
+      ],
+      [
+        "and",
+        0.0867
+      ],
+      [
+        "said",
+        0.0772
+      ],
+      [
+        "you",
+        0.0491
+      ],
+      [
+        "he",
+        0.0426
+      ]
+    ],
+    "i have no doubt that": [
+      [
+        "i",
+        0.1708
+      ],
+      [
+        "the",
+        0.1613
+      ],
+      [
+        "you",
+        0.0996
+      ],
+      [
+        "it",
+        0.0919
+      ],
+      [
+        "he",
+        0.0846
+      ]
+    ],
+    "sherlock holmes was": [
+      [
+        "a",
+        0.0602
+      ],
+      [
+        "not",
+        0.0292
+      ],
+      [
+        "in",
+        0.0288
+      ],
+      [
+        "the",
+        0.018
+      ],
+      [
+        "at",
+        0.0145
+      ]
+    ],
+    "it was a dark": [
+      [
+        "man",
+        0.0638
+      ],
+      [
+        "deal",
+        0.0341
+      ],
+      [
+        "thing",
+        0.0208
+      ],
+      [
+        "minutes",
+        0.0199
+      ],
+      [
+        "one",
+        0.0196
+      ]
+    ],
+    "what do you": [
+      [
+        "see",
+        0.0541
+      ],
+      [
+        "mean",
+        0.0529
+      ],
+      [
+        "do",
+        0.0476
+      ],
+      [
+        "have",
+        0.0391
+      ],
+      [
+        "know",
+        0.0316
+      ]
+    ]
+  },
+  "recomputed_word2vec_neighbours": {
+    "holmes": [
+      "sherlock",
+      "jones",
+      "said",
+      "staggered",
+      "thoughtfully"
+    ],
+    "watson": [
+      "index",
+      "owe",
+      "hungry",
+      "we've",
+      "yelled"
+    ],
+    "door": [
+      "stairs",
+      "paused",
+      "slammed",
+      "flew",
+      "tap"
+    ],
+    "said": [
+      "murmured",
+      "thoughtfully",
+      "cried",
+      "share",
+      "blandly"
+    ],
+    "money": [
+      "borrowed",
+      "friends",
+      "sink",
+      "art",
+      "relatives"
+    ]
+  }
+}
